@@ -1,11 +1,4 @@
 <?php
-    /*require_once 'vendor/autoload.php'; // Include the Twilio PHP SDK
-
-    use Twilio\Rest\Client;
-    
-    $accountSid = 'ACe1ae9d7010152a8574336c41bc2635cc';
-    $authToken = 'accd39bb264c8b2c26978e77ee6ce75c';
-    $twilio = new Client($accountSid, $authToken);*/
     
     $user = 'root';
     $pass = '';
@@ -1508,11 +1501,6 @@
         $upper = $dayoff + 100;
         $sql = $db->query("SELECT `reservation_id` FROM `reservations` WHERE `product_id` = '$id' AND `slot` > '$lower' AND `slot` < '$upper' GROUP BY `reservation_id` LIMIT 1");
         return (mysqli_num_rows($sql) > 0);
-    }
-    /*Twilio*/
-    function generateAndSendCode($number) {
-        $verification = "123456";
-        return $verification;
     }
     /*Rep reporting*/
     function pastMoreThanTwoDays($slot) {
