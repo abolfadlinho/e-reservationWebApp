@@ -1,0 +1,1 @@
+<script>window.location.href = 'publicside/index.php';</script>
